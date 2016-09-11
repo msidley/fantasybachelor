@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  # Routes for the Action resource:
+
+root "comments#index"
+
+# Routes for the Action resource:
   # CREATE
   get "/actions/new", :controller => "actions", :action => "new"
   post "/create_action", :controller => "actions", :action => "create"
