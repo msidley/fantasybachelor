@@ -1,2 +1,2 @@
-class FantasyContestant < ApplicationRecord
+class FantasyContestant < ActiveRecord::Base
 end

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-root "comments#index"
+root "actions#new"
 
 # Routes for the Action resource:
   # CREATE

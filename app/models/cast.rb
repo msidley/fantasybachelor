@@ -1,2 +1,2 @@
-class Cast < ApplicationRecord
+class Cast < ActiveRecord::Base
 end

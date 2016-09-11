@@ -1,2 +1,2 @@
-class Action < ApplicationRecord
+class Action < ActiveRecord::Base
 end

@@ -1,2 +1,2 @@
-class League < ApplicationRecord
+class League < ActiveRecord::Base
 end

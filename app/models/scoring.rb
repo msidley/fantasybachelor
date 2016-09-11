@@ -1,2 +1,2 @@
-class Scoring < ApplicationRecord
+class Scoring < ActiveRecord::Base
 end
