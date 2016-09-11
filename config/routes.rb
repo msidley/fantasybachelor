@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+  # Routes for the Scoring resource:
+  # CREATE
+  get "/scorings/new", :controller => "scorings", :action => "new"
+  post "/create_scoring", :controller => "scorings", :action => "create"
+
+  # READ
+  get "/scorings", :controller => "scorings", :action => "index"
+  get "/scorings/:id", :controller => "scorings", :action => "show"
+
+  # UPDATE
+  get "/scorings/:id/edit", :controller => "scorings", :action => "edit"
+  post "/update_scoring/:id", :controller => "scorings", :action => "update"
+
+  # DELETE
+  get "/delete_scoring/:id", :controller => "scorings", :action => "destroy"
+  #------------------------------
+
   # Routes for the Cast resource:
   # CREATE
   get "/casts/new", :controller => "casts", :action => "new"

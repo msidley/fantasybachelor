@@ -1,0 +1,37 @@
+<div class="page-header">
+  <h3>Scoring #<%= @scoring.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>Cast</dt>
+      <dd><%= @scoring.cast_id %></dd>
+
+      <dt>Actions</dt>
+      <dd><%= @scoring.actions_id %></dd>
+
+      <dt>Week</dt>
+      <dd><%= @scoring.week %></dd>
+
+      <dt>Extra1</dt>
+      <dd><%= @scoring.extra1 %></dd>
+
+      <dt>Extra2</dt>
+      <dd><%= @scoring.extra2 %></dd>
+
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/scorings" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/scorings/<%= @scoring.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_scoring/<%= @scoring.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>

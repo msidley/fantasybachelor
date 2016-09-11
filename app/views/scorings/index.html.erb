@@ -1,0 +1,36 @@
+<div class="page-header">
+  <h1>
+    Scorings
+    <a href="/scorings/new" class="btn btn-lg btn-success">New Scoring</a>
+  </h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-striped table-hover">
+      <tr>
+        <th>Cast</th>
+        <th>Actions</th>
+        <th>Week</th>
+        <th>Extra1</th>
+        <th>Extra2</th>
+        <th>Actions</th>
+      </tr>
+
+      <% @scorings.each do |scoring| %>
+      <tr>
+        <td><%= scoring.cast_id %></td>
+        <td><%= scoring.actions_id %></td>
+        <td><%= scoring.week %></td>
+        <td><%= scoring.extra1 %></td>
+        <td><%= scoring.extra2 %></td>
+        <td>
+          <a href="/scorings/<%= scoring.id %>" class="btn btn-primary">Show</a>
+          <a href="/scorings/<%= scoring.id %>/edit" class="btn btn-warning">Edit</a>
+          <a href="/delete_scoring/<%= scoring.id %>" class="btn btn-danger" rel="nofollow">Delete</a>
+        </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>
