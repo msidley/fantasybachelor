@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+  # Routes for the User_league resource:
+  # CREATE
+  get "/user_leagues/new", :controller => "user_leagues", :action => "new"
+  post "/create_user_league", :controller => "user_leagues", :action => "create"
+
+  # READ
+  get "/user_leagues", :controller => "user_leagues", :action => "index"
+  get "/user_leagues/:id", :controller => "user_leagues", :action => "show"
+
+  # UPDATE
+  get "/user_leagues/:id/edit", :controller => "user_leagues", :action => "edit"
+  post "/update_user_league/:id", :controller => "user_leagues", :action => "update"
+
+  # DELETE
+  get "/delete_user_league/:id", :controller => "user_leagues", :action => "destroy"
+  #------------------------------
+
   devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

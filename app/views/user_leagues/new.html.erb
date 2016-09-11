@@ -1,0 +1,106 @@
+<!-- Validation failure messages -->
+<% if @user_league.errors.any? %>
+  <% @user_league.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<div class="page-header">
+  <h3>Add User League</h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <form action="/create_user_league" method="post">
+      <!-- Hidden input for authenticity token to protect from forgery -->
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+
+      <!-- Label and input for user_id -->
+      <div class="form-group">
+        <label for="user_id" class="control-label">
+          User
+        </label>
+
+        <input type="text" id="user_id" name="user_id" placeholder="User" class="form-control" value="<%= @user_league.user_id %>">
+      </div>
+
+      <!-- Label and input for league_id -->
+      <div class="form-group">
+        <label for="league_id" class="control-label">
+          League
+        </label>
+
+        <input type="text" id="league_id" name="league_id" placeholder="League" class="form-control" value="<%= @user_league.league_id %>">
+      </div>
+
+      <!-- Label and input for commissioner -->
+      <div class="checkbox">
+        <label for="commissioner">
+          <input type="checkbox" id="commissioner" name="commissioner" value="1" <%= "checked" if @user_league.commissioner %>>
+          Commissioner
+        </label>
+      </div>
+
+      <!-- Label and input for selected_contestants -->
+      <div class="checkbox">
+        <label for="selected_contestants">
+          <input type="checkbox" id="selected_contestants" name="selected_contestants" value="1" <%= "checked" if @user_league.selected_contestants %>>
+          Selected contestants
+        </label>
+      </div>
+
+      <!-- Label and input for point_total -->
+      <div class="form-group">
+        <label for="point_total" class="control-label">
+          Point total
+        </label>
+
+        <input type="text" id="point_total" name="point_total" placeholder="Point total" class="form-control" value="<%= @user_league.point_total %>">
+      </div>
+
+      <!-- Label and input for points_last_week -->
+      <div class="form-group">
+        <label for="points_last_week" class="control-label">
+          Points last week
+        </label>
+
+        <input type="text" id="points_last_week" name="points_last_week" placeholder="Points last week" class="form-control" value="<%= @user_league.points_last_week %>">
+      </div>
+
+      <!-- Label and input for league_locked -->
+      <div class="checkbox">
+        <label for="league_locked">
+          <input type="checkbox" id="league_locked" name="league_locked" value="1" <%= "checked" if @user_league.league_locked %>>
+          League locked
+        </label>
+      </div>
+
+      <!-- Label and input for extra1 -->
+      <div class="form-group">
+        <label for="extra1" class="control-label">
+          Extra1
+        </label>
+
+        <input type="text" id="extra1" name="extra1" placeholder="Extra1" class="form-control" value="<%= @user_league.extra1 %>">
+      </div>
+
+      <!-- Label and input for extra2 -->
+      <div class="form-group">
+        <label for="extra2" class="control-label">
+          Extra2
+        </label>
+
+        <textarea id="extra2" name="extra2" placeholder="Extra2" class="form-control" rows="3"><%= @user_league.extra2 %></textarea>
+      </div>
+
+      <button class="btn btn-success">
+        Create User League
+      </button>
+      or
+      <a href="/user_leagues">Cancel</a>
+    </form>
+  </div>
+</div>
