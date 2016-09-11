@@ -1,0 +1,82 @@
+<!-- Validation failure messages -->
+<% if @league.errors.any? %>
+  <% @league.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<div class="page-header">
+  <h3>Add League</h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <form action="/create_league" method="post">
+      <!-- Hidden input for authenticity token to protect from forgery -->
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+
+      <!-- Label and input for league_name -->
+      <div class="form-group">
+        <label for="league_name" class="control-label">
+          League name
+        </label>
+
+        <input type="text" id="league_name" name="league_name" placeholder="League name" class="form-control" value="<%= @league.league_name %>">
+      </div>
+
+      <!-- Label and input for password -->
+      <div class="form-group">
+        <label for="password" class="control-label">
+          Password
+        </label>
+
+        <input type="text" id="password" name="password" placeholder="Password" class="form-control" value="<%= @league.password %>">
+      </div>
+
+      <!-- Label and input for motto -->
+      <div class="form-group">
+        <label for="motto" class="control-label">
+          Motto
+        </label>
+
+        <textarea id="motto" name="motto" placeholder="Motto" class="form-control" rows="3"><%= @league.motto %></textarea>
+      </div>
+
+      <!-- Label and input for league_locked_date -->
+      <div class="form-group">
+        <label for="league_locked_date" class="control-label">
+          League locked date
+        </label>
+
+        <input type="text" id="league_locked_date" name="league_locked_date" placeholder="League locked date" class="form-control" value="<%= @league.league_locked_date %>">
+      </div>
+
+      <!-- Label and input for extra1 -->
+      <div class="form-group">
+        <label for="extra1" class="control-label">
+          Extra1
+        </label>
+
+        <input type="text" id="extra1" name="extra1" placeholder="Extra1" class="form-control" value="<%= @league.extra1 %>">
+      </div>
+
+      <!-- Label and input for extra2 -->
+      <div class="form-group">
+        <label for="extra2" class="control-label">
+          Extra2
+        </label>
+
+        <textarea id="extra2" name="extra2" placeholder="Extra2" class="form-control" rows="3"><%= @league.extra2 %></textarea>
+      </div>
+
+      <button class="btn btn-success">
+        Create League
+      </button>
+      or
+      <a href="/leagues">Cancel</a>
+    </form>
+  </div>
+</div>

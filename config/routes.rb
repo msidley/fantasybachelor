@@ -1,4 +1,21 @@
 Rails.application.routes.draw do
+  # Routes for the League resource:
+  # CREATE
+  get "/leagues/new", :controller => "leagues", :action => "new"
+  post "/create_league", :controller => "leagues", :action => "create"
+
+  # READ
+  get "/leagues", :controller => "leagues", :action => "index"
+  get "/leagues/:id", :controller => "leagues", :action => "show"
+
+  # UPDATE
+  get "/leagues/:id/edit", :controller => "leagues", :action => "edit"
+  post "/update_league/:id", :controller => "leagues", :action => "update"
+
+  # DELETE
+  get "/delete_league/:id", :controller => "leagues", :action => "destroy"
+  #------------------------------
+
   # Routes for the User_league resource:
   # CREATE
   get "/user_leagues/new", :controller => "user_leagues", :action => "new"

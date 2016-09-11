@@ -1,0 +1,38 @@
+<div class="page-header">
+  <h1>
+    Leagues
+    <a href="/leagues/new" class="btn btn-lg btn-success">New League</a>
+  </h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-striped table-hover">
+      <tr>
+        <th>League name</th>
+        <th>Password</th>
+        <th>Motto</th>
+        <th>League locked date</th>
+        <th>Extra1</th>
+        <th>Extra2</th>
+        <th>Actions</th>
+      </tr>
+
+      <% @leagues.each do |league| %>
+      <tr>
+        <td><%= league.league_name %></td>
+        <td><%= league.password %></td>
+        <td><%= league.motto %></td>
+        <td><%= league.league_locked_date %></td>
+        <td><%= league.extra1 %></td>
+        <td><%= league.extra2 %></td>
+        <td>
+          <a href="/leagues/<%= league.id %>" class="btn btn-primary">Show</a>
+          <a href="/leagues/<%= league.id %>/edit" class="btn btn-warning">Edit</a>
+          <a href="/delete_league/<%= league.id %>" class="btn btn-danger" rel="nofollow">Delete</a>
+        </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

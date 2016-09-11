@@ -1,0 +1,40 @@
+<div class="page-header">
+  <h3>League #<%= @league.id %></h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>League name</dt>
+      <dd><%= @league.league_name %></dd>
+
+      <dt>Password</dt>
+      <dd><%= @league.password %></dd>
+
+      <dt>Motto</dt>
+      <dd><%= @league.motto %></dd>
+
+      <dt>League locked date</dt>
+      <dd><%= @league.league_locked_date %></dd>
+
+      <dt>Extra1</dt>
+      <dd><%= @league.extra1 %></dd>
+
+      <dt>Extra2</dt>
+      <dd><%= @league.extra2 %></dd>
+
+    </dl>
+
+    <div class="btn-group btn-group-justified">
+      <a href="/leagues" class="btn btn-primary">
+        Back
+      </a>
+      <a href="/leagues/<%= @league.id %>/edit" class="btn btn-warning">
+        Edit
+      </a>
+      <a href="/delete_league/<%= @league.id %>" class="btn btn-danger" rel="nofollow">
+        Delete
+      </a>
+    </div>
+  </div>
+</div>
