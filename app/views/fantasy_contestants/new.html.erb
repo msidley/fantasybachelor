@@ -1,0 +1,64 @@
+<!-- Validation failure messages -->
+<% if @fantasy_contestant.errors.any? %>
+  <% @fantasy_contestant.errors.full_messages.each do |message| %>
+    <div class="alert alert-dismissable alert-danger">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <%= message %>
+    </div>
+  <% end %>
+<% end %>
+
+<div class="page-header">
+  <h3>Add Fantasy Contestant</h3>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <form action="/create_fantasy_contestant" method="post">
+      <!-- Hidden input for authenticity token to protect from forgery -->
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+
+      <!-- Label and input for cast_id -->
+      <div class="form-group">
+        <label for="cast_id" class="control-label">
+          Cast
+        </label>
+
+        <input type="text" id="cast_id" name="cast_id" placeholder="Cast" class="form-control" value="<%= @fantasy_contestant.cast_id %>">
+      </div>
+
+      <!-- Label and input for user_league_id -->
+      <div class="form-group">
+        <label for="user_league_id" class="control-label">
+          User league
+        </label>
+
+        <input type="text" id="user_league_id" name="user_league_id" placeholder="User league" class="form-control" value="<%= @fantasy_contestant.user_league_id %>">
+      </div>
+
+      <!-- Label and input for extra1 -->
+      <div class="form-group">
+        <label for="extra1" class="control-label">
+          Extra1
+        </label>
+
+        <input type="text" id="extra1" name="extra1" placeholder="Extra1" class="form-control" value="<%= @fantasy_contestant.extra1 %>">
+      </div>
+
+      <!-- Label and input for extra2 -->
+      <div class="form-group">
+        <label for="extra2" class="control-label">
+          Extra2
+        </label>
+
+        <textarea id="extra2" name="extra2" placeholder="Extra2" class="form-control" rows="3"><%= @fantasy_contestant.extra2 %></textarea>
+      </div>
+
+      <button class="btn btn-success">
+        Create Fantasy Contestant
+      </button>
+      or
+      <a href="/fantasy_contestants">Cancel</a>
+    </form>
+  </div>
+</div>
