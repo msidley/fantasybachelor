@@ -17,11 +17,9 @@ class LeaguesController < ApplicationController
     @league.password = params[:password]
     @league.motto = params[:motto]
     @league.league_locked_date = params[:league_locked_date]
-    @league.extra1 = params[:extra1]
-    @league.extra2 = params[:extra2]
-
+    @userid = params[:user_id]
     if @league.save
-      redirect_to "/leagues", :notice => "League created successfully."
+      redirect_to "/user_leagues/newleague/#{@league.id}/#{@userid}"
     else
       render 'new'
     end

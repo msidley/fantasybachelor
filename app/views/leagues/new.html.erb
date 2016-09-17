@@ -9,7 +9,7 @@
 <% end %>
 
 <div class="page-header">
-  <h3>Add League</h3>
+  <h3>Create a league and invite your friends to join you in the fun!</h3>
 </div>
 
 <div class="row">
@@ -21,7 +21,7 @@
       <!-- Label and input for league_name -->
       <div class="form-group">
         <label for="league_name" class="control-label">
-          League name
+          League Name
         </label>
 
         <input type="text" id="league_name" name="league_name" placeholder="League name" class="form-control" value="<%= @league.league_name %>">
@@ -30,7 +30,7 @@
       <!-- Label and input for password -->
       <div class="form-group">
         <label for="password" class="control-label">
-          Password
+          League Password
         </label>
 
         <input type="text" id="password" name="password" placeholder="Password" class="form-control" value="<%= @league.password %>">
@@ -39,7 +39,7 @@
       <!-- Label and input for motto -->
       <div class="form-group">
         <label for="motto" class="control-label">
-          Motto
+          League Motto
         </label>
 
         <textarea id="motto" name="motto" placeholder="Motto" class="form-control" rows="3"><%= @league.motto %></textarea>
@@ -48,29 +48,13 @@
       <!-- Label and input for league_locked_date -->
       <div class="form-group">
         <label for="league_locked_date" class="control-label">
-          League locked date
+          Date to lock contestants for the league
         </label>
 
         <input type="text" id="league_locked_date" name="league_locked_date" placeholder="League locked date" class="form-control" value="<%= @league.league_locked_date %>">
       </div>
 
-      <!-- Label and input for extra1 -->
-      <div class="form-group">
-        <label for="extra1" class="control-label">
-          Extra1
-        </label>
-
-        <input type="text" id="extra1" name="extra1" placeholder="Extra1" class="form-control" value="<%= @league.extra1 %>">
-      </div>
-
-      <!-- Label and input for extra2 -->
-      <div class="form-group">
-        <label for="extra2" class="control-label">
-          Extra2
-        </label>
-
-        <textarea id="extra2" name="extra2" placeholder="Extra2" class="form-control" rows="3"><%= @league.extra2 %></textarea>
-      </div>
+      <input type="hidden" id="user_id" name="user_id" value="<%= current_user.id %>">
 
       <button class="btn btn-success">
         Create League

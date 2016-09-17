@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-root "comments#index"
+root "home#index"
 
 # Routes for the Action resource:
   # CREATE
@@ -76,7 +76,7 @@ root "comments#index"
   post "/create_comment", :controller => "comments", :action => "create"
 
   # READ
-  get "/comments", :controller => "comments", :action => "index"
+  get "/home", :controller => "comments", :action => "index"
   get "/comments/:id", :controller => "comments", :action => "show"
 
   # UPDATE
@@ -106,7 +106,7 @@ root "comments#index"
 
   # Routes for the User_league resource:
   # CREATE
-  get "/user_leagues/new", :controller => "user_leagues", :action => "new"
+  get "/user_leagues/newleague/:league_id/:user_id", :controller => "user_leagues", :action => "newleague"
   post "/create_user_league", :controller => "user_leagues", :action => "create"
 
   # READ

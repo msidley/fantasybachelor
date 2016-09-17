@@ -11,20 +11,19 @@ class UserLeaguesController < ApplicationController
     @user_league = UserLeague.new
   end
 
-  def create
+  def newleague
     @user_league = UserLeague.new
     @user_league.user_id = params[:user_id]
     @user_league.league_id = params[:league_id]
-    @user_league.commissioner = params[:commissioner]
-    @user_league.selected_contestants = params[:selected_contestants]
-    @user_league.point_total = params[:point_total]
-    @user_league.points_last_week = params[:points_last_week]
-    @user_league.league_locked = params[:league_locked]
-    @user_league.extra1 = params[:extra1]
-    @user_league.extra2 = params[:extra2]
+    @user_league.commissioner = true
+    @user_league.selected_contestants = false
+    @user_league.point_total = 0
+    @user_league.league_locked = false
+    @user_league.points_last_week = 0
+
 
     if @user_league.save
-      redirect_to "/user_leagues", :notice => "User league created successfully."
+      redirect_to "/home", :notice => "League created successfully."
     else
       render 'new'
     end
