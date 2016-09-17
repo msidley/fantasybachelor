@@ -21,11 +21,27 @@ class UserLeaguesController < ApplicationController
     @user_league.league_locked = false
     @user_league.points_last_week = 0
 
-
     if @user_league.save
       redirect_to "/home", :notice => "League created successfully."
     else
       render 'new'
+    end
+  end
+
+  def joinleague
+    @user_league = UserLeague.new
+    @user_league.user_id = params[:user_id]
+    @user_league.league_id = params[:league_id]
+    @user_league.commissioner = false
+    @user_league.selected_contestants = false
+    @user_league.point_total = 0
+    @user_league.league_locked = false
+    @user_league.points_last_week = 0
+
+    if @user_league.save
+      redirect_to "/home", :notice => "Joined league successfully."
+    else
+      redirect_to "/home", :notice => "You've already joined this league"
     end
   end
 

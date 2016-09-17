@@ -1,20 +1,18 @@
 <!-- Validation failure messages -->
-<% if @league.errors.any? %>
-  <% @league.errors.full_messages.each do |message| %>
+<% if @league.extra2 != "no error" %>
     <div class="alert alert-dismissable alert-danger">
       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-      <%= message %>
+      <%= @league.extra2 %>
     </div>
-  <% end %>
 <% end %>
 
 <div class="page-header">
-  <h3>Create a league and invite your friends</h3>
+  <h3>Join a league</h3>
 </div>
 
 <div class="row">
   <div class="col-md-12">
-    <form action="/create_league" method="post">
+    <form action="/leagues/join" method="get">
       <!-- Hidden input for authenticity token to protect from forgery -->
       <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
 
@@ -36,31 +34,13 @@
         <input type="text" id="password" name="password" placeholder="Password" class="form-control" value="<%= @league.password %>">
       </div>
 
-      <!-- Label and input for motto -->
-      <div class="form-group">
-        <label for="motto" class="control-label">
-          League Motto
-        </label>
-
-        <textarea id="motto" name="motto" placeholder="Motto" class="form-control" rows="3"><%= @league.motto %></textarea>
-      </div>
-
-      <!-- Label and input for league_locked_date -->
-      <div class="form-group">
-        <label for="league_locked_date" class="control-label">
-          Date to lock contestants for the league
-        </label>
-
-        <input type="text" id="league_locked_date" name="league_locked_date" placeholder="League locked date" class="form-control" value="<%= @league.league_locked_date %>">
-      </div>
-
       <input type="hidden" id="user_id" name="user_id" value="<%= current_user.id %>">
 
       <button class="btn btn-success">
-        Create League
+        Join League
       </button>
       or
-      <a href="/leagues">Cancel</a>
+      <a href="/leagues/<%= @league.id %>">Cancel</a>
     </form>
   </div>
 </div>

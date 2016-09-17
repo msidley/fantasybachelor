@@ -25,6 +25,22 @@ class LeaguesController < ApplicationController
     end
   end
 
+  def find
+    @league = League.new
+    @league.extra2 = "no error"
+  end
+
+  def join
+    @league = League.find_by(:league_name => params[:league_name])
+    @userid = params[:user_id]
+    if @league.password == params[:password]
+      redirect_to "/user_leagues/joinleague/#{@league.id}/#{@userid}"
+    else
+      @league.extra2 = "Could not find league or password does not match"
+      render 'find'
+    end
+  end
+
   def edit
     @league = League.find(params[:id])
   end

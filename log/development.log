@@ -4313,3 +4313,1933 @@ Processing by CommentsController#index as HTML
   [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
   Rendered comments/index.html.erb within layouts/application (0.5ms)
 Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for ::1 at 2016-09-17 13:02:45 +0200
+Processing by CommentsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 126ms (Views: 55.2ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/user_league/new" for ::1 at 2016-09-17 13:11:16 +0200
+
+ActionController::RoutingError (No route matches [GET] "/user_league/new"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (8.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (153.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (164.0ms)
+
+
+Started GET "/home" for ::1 at 2016-09-17 13:11:21 +0200
+Processing by CommentsController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 115ms (Views: 68.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/home" for ::1 at 2016-09-17 13:11:22 +0200
+Processing by CommentsController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:11:23 +0200
+Processing by LeaguesController#join as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/join.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <!-- Validation failure messages -->
+    2: <% if @league.errors.any? %>
+    3:   <% @league.errors.full_messages.each do |message| %>
+    4:     <div class="alert alert-dismissable alert-danger">
+    5:       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  app/views/leagues/join.html.erb:2:in `_app_views_leagues_join_html_erb__1772301314605648120_70226079649640'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.3ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:12:19 +0200
+Processing by LeaguesController#join as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/join.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 62ms (Views: 27.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:12:46 +0200
+Processing by LeaguesController#join as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/join.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 22ms (Views: 18.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:12:49 +0200
+Processing by LeaguesController#join as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/join.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:13:52 +0200
+Processing by LeaguesController#join as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/join.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 46ms (Views: 42.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home" for ::1 at 2016-09-17 13:13:54 +0200
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 43ms (Views: 36.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:14:49 +0200
+Processing by LeaguesController#join as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/join.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 55ms (Views: 39.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:17:48 +0200
+Processing by LeaguesController#join as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/join.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 46ms (Views: 41.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:23:56 +0200
+Processing by LeaguesController#join as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/join.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 27ms (Views: 22.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:24:24 +0200
+Processing by LeaguesController#join as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/join.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 63ms (Views: 53.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home" for ::1 at 2016-09-17 13:24:30 +0200
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.7ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 56ms (Views: 49.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home" for ::1 at 2016-09-17 13:24:33 +0200
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 44ms (Views: 34.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:24:35 +0200
+Processing by LeaguesController#join as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/join.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 38.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:29:33 +0200
+Processing by LeaguesController#show as HTML
+  Parameters: {"id"=>"join"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.5ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 46ms (ActiveRecord: 2.0ms)
+
+ActiveRecord::RecordNotFound (Couldn't find League with 'id'=join):
+  app/controllers/leagues_controller.rb:7:in `show'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (65.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (138.1ms)
+
+
+Started GET "/leagues" for ::1 at 2016-09-17 13:29:37 +0200
+Processing by LeaguesController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.8ms)[0m  [1mSELECT "leagues".* FROM "leagues"[0m
+  Rendered leagues/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-09-17 13:29:37 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-09-17 13:29:37 +0200
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:29:40 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.6ms)
+
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    1: <!-- Validation failure messages -->
+    2: <% if @league.errors.any? %>
+    3:   <% @league.errors.full_messages.each do |message| %>
+    4:     <div class="alert alert-dismissable alert-danger">
+    5:       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  app/views/leagues/find.html.erb:2:in `_app_views_leagues_find_html_erb__924866008825093538_70226101788520'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (105.5ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:29:58 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 44ms (Views: 17.3ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/leagues/join" for ::1 at 2016-09-17 13:42:07 +0200
+
+ActionController::RoutingError (No route matches [POST] "/leagues/join"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (156.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (66.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.4ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:42:32 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 165ms (Views: 34.1ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:42:34 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/leagues/join" for ::1 at 2016-09-17 13:42:39 +0200
+
+ActionController::RoutingError (No route matches [POST] "/leagues/join"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (127.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (150.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:45:03 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 68ms (Views: 35.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:45:07 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 31ms (Views: 20.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:45:09 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:45:10 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/leagues/join" for ::1 at 2016-09-17 13:45:18 +0200
+
+ActionController::RoutingError (No route matches [POST] "/leagues/join"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (146.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (72.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.2ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:45:46 +0200
+Processing by LeaguesController#join as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 404 Not Found in 28ms (ActiveRecord: 0.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find League without an ID):
+  app/controllers/leagues_controller.rb:33:in `join'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (68.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (139.7ms)
+
+
+Started GET "/leagues/join" for ::1 at 2016-09-17 13:46:07 +0200
+Processing by LeaguesController#join as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mLeague Load (0.2ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1  [["id", nil]]
+Completed 404 Not Found in 32ms (ActiveRecord: 1.6ms)
+
+ActiveRecord::RecordNotFound (Couldn't find League with 'id'=):
+  app/controllers/leagues_controller.rb:33:in `join'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (135.1ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:47:40 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 77ms (Views: 39.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:47:42 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 72ms (Views: 69.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:47:43 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 30ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/join?authenticity_token=cyBl2WkPrLXgnOUE67K%2BgUbyjM2A%2Bb4UbLrfVSymaas1VV9Od%2B10PrfFjnYOiCJSQWRIEj2CllqVdblKWYrVmg%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 13:47:52 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"cyBl2WkPrLXgnOUE67K+gUbyjM2A+b4UbLrfVSymaas1VV9Od+10PrfFjnYOiCJSQWRIEj2CllqVdblKWYrVmg==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.2ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 3ms (ActiveRecord: 0.3ms)
+
+ActiveRecord::RecordNotFound (Couldn't find League with 'id'=Test_league1):
+  app/controllers/leagues_controller.rb:33:in `join'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (64.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (141.6ms)
+
+
+Started GET "/leagues/join?authenticity_token=cyBl2WkPrLXgnOUE67K%2BgUbyjM2A%2Bb4UbLrfVSymaas1VV9Od%2B10PrfFjnYOiCJSQWRIEj2CllqVdblKWYrVmg%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 13:48:24 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"cyBl2WkPrLXgnOUE67K+gUbyjM2A+b4UbLrfVSymaas1VV9Od+10PrfFjnYOiCJSQWRIEj2CllqVdblKWYrVmg==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.4ms)
+
+NameError (undefined local variable or method `league_name' for #<LeaguesController:0x007fbd8dd55f50>):
+  app/controllers/leagues_controller.rb:33:in `join'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (127.3ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:50:43 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 116ms (Views: 49.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:50:45 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 32ms (Views: 28.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/leagues/join?authenticity_token=a%2FSMJX1GNLWoDPSIu8gkCp5sYdgIwAdHAJ%2FRmBpsPv4tgbayY6TsPv9Vn%2Fpe8rjZmfqlB7W7Lwn5ULeHb0CCzw%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 13:50:54 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"a/SMJX1GNLWoDPSIu8gkCp5sYdgIwAdHAJ/RmBpsPv4tgbayY6TsPv9Vn/pe8rjZmfqlB7W7Lwn5ULeHb0CCzw==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.1ms)
+
+NameError (undefined local variable or method `league_id' for #<LeaguesController:0x007fbd917151c8>):
+  app/controllers/leagues_controller.rb:33:in `join'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:53:19 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 55ms (Views: 24.7ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 13:53:21 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 74ms (Views: 72.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/leagues/join?authenticity_token=xzC62vdd6Biqa3sutSZFQWSsZVr1kT3ha%2BVaS0n5jnOBRYBN6b8wk%2F0yEFxQHNmSYzqhhUjqFa%2BSKjxUPNUyQg%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 13:53:24 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"xzC62vdd6Biqa3sutSZFQWSsZVr1kT3ha+VaS0n5jnOBRYBN6b8wk/0yEFxQHNmSYzqhhUjqFa+SKjxUPNUyQg==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+
+NameError (undefined local variable or method `league_name' for #<LeaguesController:0x007fbd951bb340>):
+  app/controllers/leagues_controller.rb:33:in `join'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (85.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (71.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (148.3ms)
+  [1m[35mLeague Load (1.6ms)[0m  SELECT "leagues".* FROM "leagues"
+  [1m[36mLeague Load (4.4ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:05:40 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 98ms (Views: 40.3ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/leagues/join?authenticity_token=FzNSInJnzh%2BLNlsUH1H6eYdWnIq4vFJgDyCr3hzvKahRRmi1bIUWlNxvMGb6a2aqgMBYVQXHei72783BacOVmQ%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:05:43 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"FzNSInJnzh+LNlsUH1H6eYdWnIq4vFJgDyCr3hzvKahRRmi1bIUWlNxvMGb6a2aqgMBYVQXHei72783BacOVmQ==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.3ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms)
+
+ActionView::MissingTemplate (Missing template leagues/join, application/join with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/matthewsidley/OneDrive/Documents/FantasyBachelor/FBCode/FantasyBachelor/fantasybachelor/app/views"
+  * "/Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/devise-4.2.0/app/views"
+):
+  actionview (4.2.6) lib/action_view/path_set.rb:46:in `find'
+  actionview (4.2.6) lib/action_view/lookup_context.rb:121:in `find'
+  actionview (4.2.6) lib/action_view/renderer/abstract_renderer.rb:18:in `find_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:40:in `determine_template'
+  actionview (4.2.6) lib/action_view/renderer/template_renderer.rb:8:in `render'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:46:in `render_template'
+  actionview (4.2.6) lib/action_view/renderer/renderer.rb:27:in `render'
+  actionview (4.2.6) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.6) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.6) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.6) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.6) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.6) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.6) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.6) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.6) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `call'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (14.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (80.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (76.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (154.4ms)
+
+
+Started GET "/leagues/join?authenticity_token=aCp4iWA6WMHn55iGZ3O51J9Hn%2FsbmTx8s%2FcJ71ML9xMuX0IeftiASrC%2B8%2FSCSSUHmNFbJKbiFDJKOG%2FwJidLIg%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:12:28 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"aCp4iWA6WMHn55iGZ3O51J9Hn/sbmTx8s/cJ71ML9xMuX0IeftiASrC+8/SCSSUHmNFbJKbiFDJKOG/wJidLIg==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.2ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+  Rendered leagues/find.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 118ms (Views: 49.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/leagues/join?authenticity_token=PhZAOW9pbI9%2FoWhtxyQHicjpLDa0He4VqD7z%2FRftmxh4Y3qucYu0BCj4Ax8iHptaz3%2Fo6QlmxltR8ZXiYsEnKQ%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:12:31 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"PhZAOW9pbI9/oWhtxyQHicjpLDa0He4VqD7z/Rftmxh4Y3qucYu0BCj4Ax8iHptaz3/o6QlmxltR8ZXiYsEnKQ==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.1ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+  Rendered leagues/find.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 25ms (Views: 21.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/leagues/join?authenticity_token=qCVN%2B%2FwC3Zh1bFTfIe7bQFRE%2BlZZpqarwUvCoyFH6ZbuUHds4uAFEyI1P63E1EeTU9I%2BieTdjuU4hKS8VGtVpw%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:12:34 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"qCVN+/wC3Zh1bFTfIe7bQFRE+lZZpqarwUvCoyFH6ZbuUHds4uAFEyI1P63E1EeTU9I+ieTdjuU4hKS8VGtVpw==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.1ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+Redirected to http://localhost:3000/user_leagues/joinleague/15/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/user_leagues/joinleague/15/1" for ::1 at 2016-09-17 14:12:34 +0200
+
+ActionController::RoutingError (No route matches [GET] "/user_leagues/joinleague/15/1"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (4.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (124.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (77.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (1.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (154.3ms)
+
+
+Started GET "/leagues/join?authenticity_token=qCVN%2B%2FwC3Zh1bFTfIe7bQFRE%2BlZZpqarwUvCoyFH6ZbuUHds4uAFEyI1P63E1EeTU9I%2BieTdjuU4hKS8VGtVpw%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:14:19 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"qCVN+/wC3Zh1bFTfIe7bQFRE+lZZpqarwUvCoyFH6ZbuUHds4uAFEyI1P63E1EeTU9I+ieTdjuU4hKS8VGtVpw==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.2ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.9ms)
+
+NoMethodError (undefined method `errors=' for #<League:0x007fbd8cf14e00>):
+  app/controllers/leagues_controller.rb:38:in `join'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (80.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (145.2ms)
+
+
+Started GET "/leagues/join?authenticity_token=PhZAOW9pbI9%2FoWhtxyQHicjpLDa0He4VqD7z%2FRftmxh4Y3qucYu0BCj4Ax8iHptaz3%2Fo6QlmxltR8ZXiYsEnKQ%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:14:22 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"PhZAOW9pbI9/oWhtxyQHicjpLDa0He4VqD7z/Rftmxh4Y3qucYu0BCj4Ax8iHptaz3/o6QlmxltR8ZXiYsEnKQ==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.1ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+
+NoMethodError (undefined method `errors=' for #<League:0x007fbd938489f8>):
+  app/controllers/leagues_controller.rb:38:in `join'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (87.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (115.7ms)
+
+
+Started GET "/leagues/join?authenticity_token=PhZAOW9pbI9%2FoWhtxyQHicjpLDa0He4VqD7z%2FRftmxh4Y3qucYu0BCj4Ax8iHptaz3%2Fo6QlmxltR8ZXiYsEnKQ%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:14:31 +0200
+
+SyntaxError (/Users/matthewsidley/OneDrive/Documents/FantasyBachelor/FBCode/FantasyBachelor/fantasybachelor/app/controllers/leagues_controller.rb:38: no .<digit> floating literal anymore; put 0 before dot
+      @league.errors.1 = "Could not find league or...
+                     ^
+/Users/matthewsidley/OneDrive/Documents/FantasyBachelor/FBCode/FantasyBachelor/fantasybachelor/app/controllers/leagues_controller.rb:38: syntax error, unexpected tINTEGER, expecting '('
+      @league.errors.1 = "Could not find league or ...
+                      ^):
+  app/controllers/leagues_controller.rb:38: no .<digit> floating literal anymore; put 0 before dot
+  app/controllers/leagues_controller.rb:38: syntax error, unexpected tINTEGER, expecting '('
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (58.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (131.3ms)
+
+
+Started GET "/leagues/join?authenticity_token=PhZAOW9pbI9%2FoWhtxyQHicjpLDa0He4VqD7z%2FRftmxh4Y3qucYu0BCj4Ax8iHptaz3%2Fo6QlmxltR8ZXiYsEnKQ%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:14:49 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"PhZAOW9pbI9/oWhtxyQHicjpLDa0He4VqD7z/Rftmxh4Y3qucYu0BCj4Ax8iHptaz3/o6QlmxltR8ZXiYsEnKQ==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.3ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 2.5ms)
+
+NoMethodError (undefined method `to_sym' for 1:Fixnum):
+  app/controllers/leagues_controller.rb:38:in `join'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (62.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (147.9ms)
+
+
+Started GET "/leagues/join?authenticity_token=PhZAOW9pbI9%2FoWhtxyQHicjpLDa0He4VqD7z%2FRftmxh4Y3qucYu0BCj4Ax8iHptaz3%2Fo6QlmxltR8ZXiYsEnKQ%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:15:01 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"PhZAOW9pbI9/oWhtxyQHicjpLDa0He4VqD7z/Rftmxh4Y3qucYu0BCj4Ax8iHptaz3/o6QlmxltR8ZXiYsEnKQ==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.2ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 1.5ms)
+
+NoMethodError (undefined method `error=' for #<League:0x007fbd90841138>):
+  app/controllers/leagues_controller.rb:38:in `join'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (61.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (133.3ms)
+
+
+Started GET "/leagues/join?authenticity_token=PhZAOW9pbI9%2FoWhtxyQHicjpLDa0He4VqD7z%2FRftmxh4Y3qucYu0BCj4Ax8iHptaz3%2Fo6QlmxltR8ZXiYsEnKQ%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:16:50 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"PhZAOW9pbI9/oWhtxyQHicjpLDa0He4VqD7z/Rftmxh4Y3qucYu0BCj4Ax8iHptaz3/o6QlmxltR8ZXiYsEnKQ==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.2ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+  Rendered leagues/find.html.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 1.6ms)
+
+ActionView::Template::Error (undefined method `any?' for "Could not find league or password does not match":String):
+    1: <!-- Validation failure messages -->
+    2: <% if @league.extra2.any? %>
+    3:     <div class="alert alert-dismissable alert-danger">
+    4:       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    5:       <%= @league.extra2 %>
+  app/views/leagues/find.html.erb:2:in `_app_views_leagues_find_html_erb__924866008825093538_70226053515940'
+  app/controllers/leagues_controller.rb:39:in `join'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (77.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (69.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (149.8ms)
+
+
+Started GET "/leagues/join?authenticity_token=PhZAOW9pbI9%2FoWhtxyQHicjpLDa0He4VqD7z%2FRftmxh4Y3qucYu0BCj4Ax8iHptaz3%2Fo6QlmxltR8ZXiYsEnKQ%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:17:22 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"PhZAOW9pbI9/oWhtxyQHicjpLDa0He4VqD7z/Rftmxh4Y3qucYu0BCj4Ax8iHptaz3/o6QlmxltR8ZXiYsEnKQ==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.3ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+  Rendered leagues/find.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 34ms (Views: 25.8ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/leagues/join?authenticity_token=5MH8pkZA0WmHUF3ZC2p96tsQibcqG0O3Uscw%2FXPCNoeitMYxWKIJ4tAJNqvuUOE53IZNaJdga%2FmrCFbiBu6Ktg%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:17:33 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"5MH8pkZA0WmHUF3ZC2p96tsQibcqG0O3Uscw/XPCNoeitMYxWKIJ4tAJNqvuUOE53IZNaJdga/mrCFbiBu6Ktg==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.1ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/leagues/join?authenticity_token=s6nE1LhuGHznDm5UcQSg0BsW%2BE50RmoFsRYW7b5XWOb13P5DpozA97BXBSaUPjwDHIA8kck9QktI2XDyy3vk1w%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:17:35 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"s6nE1LhuGHznDm5UcQSg0BsW+E50RmoFsRYW7b5XWOb13P5DpozA97BXBSaUPjwDHIA8kck9QktI2XDyy3vk1w==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.1ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+Redirected to http://localhost:3000/user_leagues/joinleague/15/1
+Completed 302 Found in 3ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/user_leagues/joinleague/15/1" for ::1 at 2016-09-17 14:17:35 +0200
+
+ActionController::RoutingError (No route matches [GET] "/user_leagues/joinleague/15/1"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (139.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (70.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (152.6ms)
+
+
+Started GET "/user_leagues/joinleague/15/1" for ::1 at 2016-09-17 14:20:07 +0200
+Processing by UserLeaguesController#joinleague as HTML
+  Parameters: {"league_id"=>"15", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "user_leagues" ("user_id", "league_id", "commissioner", "selected_contestants", "point_total", "league_locked", "points_last_week", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["user_id", 1], ["league_id", 15], ["commissioner", "f"], ["selected_contestants", "f"], ["point_total", 0], ["league_locked", "f"], ["points_last_week", 0], ["created_at", "2016-09-17 12:20:07.209310"], ["updated_at", "2016-09-17 12:20:07.209310"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 43ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/home" for ::1 at 2016-09-17 14:20:07 +0200
+Processing by CommentsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 46ms (Views: 41.3ms | ActiveRecord: 0.5ms)
+  [1m[35mUserLeague Load (8.8ms)[0m  SELECT "user_leagues".* FROM "user_leagues"
+
+
+Started GET "/home" for ::1 at 2016-09-17 14:28:16 +0200
+Processing by CommentsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 94ms (Views: 48.7ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:29:22 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 66ms (Views: 35.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/leagues/join?authenticity_token=r3Ch3Q99bQBPpQmbgEhuhTX8FKlGVhCzWHlILiuR0pjpBZtKEZ%2B1ixj8YullcvJWMmrQdvstOP2hti4xXr1uqQ%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:29:36 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"r3Ch3Q99bQBPpQmbgEhuhTX8FKlGVhCzWHlILiuR0pjpBZtKEZ+1ixj8YullcvJWMmrQdvstOP2hti4xXr1uqQ==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mLeague Load (0.4ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1  [["league_name", "Test_league1"]]
+Redirected to http://localhost:3000/user_leagues/joinleague/15/1
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/user_leagues/joinleague/15/1" for ::1 at 2016-09-17 14:29:36 +0200
+Processing by UserLeaguesController#joinleague as HTML
+  Parameters: {"league_id"=>"15", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUserLeague Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "user_leagues" WHERE ("user_leagues"."user_id" = 1 AND "user_leagues"."league_id" = 15) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.9ms)
+
+ActionView::MissingTemplate (Missing template /home with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/matthewsidley/OneDrive/Documents/FantasyBachelor/FBCode/FantasyBachelor/fantasybachelor/app/views"
+  * "/Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/devise-4.2.0/app/views"
+):
+  app/controllers/user_leagues_controller.rb:44:in `joinleague'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (74.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (57.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.5ms)
+
+
+Started GET "/user_leagues/joinleague/15/1" for ::1 at 2016-09-17 14:30:06 +0200
+Processing by UserLeaguesController#joinleague as HTML
+  Parameters: {"league_id"=>"15", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUserLeague Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "user_leagues" WHERE ("user_leagues"."user_id" = 1 AND "user_leagues"."league_id" = 15) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 1.8ms)
+
+ActionView::MissingTemplate (Missing template /home with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/matthewsidley/OneDrive/Documents/FantasyBachelor/FBCode/FantasyBachelor/fantasybachelor/app/views"
+  * "/Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/devise-4.2.0/app/views"
+):
+  app/controllers/user_leagues_controller.rb:44:in `joinleague'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (80.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (56.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (134.3ms)
+
+
+Started GET "/leagues/join?authenticity_token=NrO6M8NW8GnnZPj3%2BlaKaXVK%2Fd8pk4qrwm4nDy5olaFwxoCk3bQo4rA9k4UfbBa6ctw5AJToouU7oUEQW0QpkA%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:30:13 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"NrO6M8NW8GnnZPj3+laKaXVK/d8pk4qrwm4nDy5olaFwxoCk3bQo4rA9k4UfbBa6ctw5AJToouU7oUEQW0QpkA==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mLeague Load (0.2ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1  [["league_name", "Test_league1"]]
+Redirected to http://localhost:3000/user_leagues/joinleague/15/1
+Completed 302 Found in 13ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/user_leagues/joinleague/15/1" for ::1 at 2016-09-17 14:30:13 +0200
+Processing by UserLeaguesController#joinleague as HTML
+  Parameters: {"league_id"=>"15", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUserLeague Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "user_leagues" WHERE ("user_leagues"."user_id" = 1 AND "user_leagues"."league_id" = 15) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+
+ActionView::MissingTemplate (Missing template /home with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:erb, :builder, :raw, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/matthewsidley/OneDrive/Documents/FantasyBachelor/FBCode/FantasyBachelor/fantasybachelor/app/views"
+  * "/Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/devise-4.2.0/app/views"
+):
+  app/controllers/user_leagues_controller.rb:44:in `joinleague'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/missing_template.html.erb within rescues/layout (72.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.1ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (121.6ms)
+
+
+Started GET "/leagues/join?authenticity_token=NrO6M8NW8GnnZPj3%2BlaKaXVK%2Fd8pk4qrwm4nDy5olaFwxoCk3bQo4rA9k4UfbBa6ctw5AJToouU7oUEQW0QpkA%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:30:56 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"NrO6M8NW8GnnZPj3+laKaXVK/d8pk4qrwm4nDy5olaFwxoCk3bQo4rA9k4UfbBa6ctw5AJToouU7oUEQW0QpkA==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mLeague Load (0.2ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1  [["league_name", "Test_league1"]]
+Redirected to http://localhost:3000/user_leagues/joinleague/15/1
+Completed 302 Found in 29ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/user_leagues/joinleague/15/1" for ::1 at 2016-09-17 14:30:57 +0200
+Processing by UserLeaguesController#joinleague as HTML
+  Parameters: {"league_id"=>"15", "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUserLeague Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "user_leagues" WHERE ("user_leagues"."user_id" = 1 AND "user_leagues"."league_id" = 15) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/home
+Completed 302 Found in 20ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/home" for ::1 at 2016-09-17 14:30:57 +0200
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 45ms (Views: 40.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:31:10 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 30ms (Views: 27.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/home" for ::1 at 2016-09-17 14:33:06 +0200
+Processing by CommentsController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 50ms (Views: 46.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:33:40 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 36ms (Views: 34.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:34:26 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 48ms (Views: 45.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:34:42 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:34:45 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 23.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:34:46 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:34:46 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:34:47 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 42ms (Views: 36.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:34:49 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 40ms (Views: 35.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:34:50 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:35:05 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+  [1m[36mLeague Load (3.7ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:36:26 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:36:27 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:36:28 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 48ms (Views: 33.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:36:28 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 40.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:36:28 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:36:29 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 34.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for ::1 at 2016-09-17 14:36:48 +0200
+Processing by RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered devise/registrations/edit.html.erb within layouts/application (22.9ms)
+Completed 200 OK in 78ms (Views: 72.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:36:56 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 52ms (Views: 47.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:36:57 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 33.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:36:58 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:36:59 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 34ms (Views: 31.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:37:01 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:37:02 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 37ms (Views: 34.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:37:03 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 38.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:37:04 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 43ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:37:05 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 83ms (Views: 20.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/leagues/new" for ::1 at 2016-09-17 14:37:06 +0200
+Processing by LeaguesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/new.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:37:08 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 35.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/leagues/new" for ::1 at 2016-09-17 14:37:09 +0200
+Processing by LeaguesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 34.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:37:15 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/new" for ::1 at 2016-09-17 14:37:22 +0200
+Processing by LeaguesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 32.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:37:23 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 31.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/new" for ::1 at 2016-09-17 14:37:45 +0200
+Processing by LeaguesController#new as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:37:46 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/new" for ::1 at 2016-09-17 14:37:47 +0200
+Processing by LeaguesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/new" for ::1 at 2016-09-17 14:38:16 +0200
+Processing by LeaguesController#new as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 103ms (Views: 71.1ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:38:21 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 34.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/new" for ::1 at 2016-09-17 14:38:24 +0200
+Processing by LeaguesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:38:26 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:38:38 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 27ms (Views: 23.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:40:00 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:40:02 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:40:03 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 37ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:40:03 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:40:03 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 37ms (Views: 34.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/leagues/new" for ::1 at 2016-09-17 14:40:05 +0200
+Processing by LeaguesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 27.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:40:06 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 46ms (Views: 43.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:42:45 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/new" for ::1 at 2016-09-17 14:42:47 +0200
+Processing by LeaguesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 46ms (Views: 42.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:43:03 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-09-17 14:43:51 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (uninitialized constant HomeController):
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (15.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (183.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (85.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (162.0ms)
+
+
+Started GET "/" for ::1 at 2016-09-17 14:43:55 +0200
+
+ActionController::RoutingError (uninitialized constant HomeController):
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.6) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.6) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/matthewsidley/.rvm/rubies/ruby-2.2.4/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (128.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (55.9ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /Users/matthewsidley/.rvm/gems/ruby-2.2.4/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (129.6ms)
+
+
+Started GET "/" for ::1 at 2016-09-17 14:44:26 +0200
+Processing by CommentsController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 442ms (Views: 399.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:44:30 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 41ms (Views: 26.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:46:06 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:46:07 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 31.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:46:07 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 27ms (Views: 22.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:46:08 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:54:20 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 98ms (Views: 44.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:54:20 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 43ms (Views: 39.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:54:21 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 45ms (Views: 40.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:54:22 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 38ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/new" for ::1 at 2016-09-17 14:54:23 +0200
+Processing by LeaguesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 51ms (Views: 48.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:54:24 +0200
+Processing by LeaguesController#find as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 45.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/leagues/join?authenticity_token=Hg98Cwm%2FzpJ8pGAuXiFUlmZLiwLRU2FWYimMzBuFbSJYekacF10WGSv9C1y7G8hFYd1P3WwoSRib5urTbqnREw%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:54:32 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"Hg98Cwm/zpJ8pGAuXiFUlmZLiwLRU2FWYimMzBuFbSJYekacF10WGSv9C1y7G8hFYd1P3WwoSRib5urTbqnREw==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mLeague Load (0.3ms)[0m  SELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1  [["league_name", "Test_league1"]]
+Redirected to http://localhost:3000/user_leagues/joinleague/15/1
+Completed 302 Found in 7ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/user_leagues/joinleague/15/1" for ::1 at 2016-09-17 14:54:32 +0200
+Processing by UserLeaguesController#joinleague as HTML
+  Parameters: {"league_id"=>"15", "user_id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUserLeague Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "user_leagues" WHERE ("user_leagues"."user_id" = 1 AND "user_leagues"."league_id" = 15) LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Redirected to http://localhost:3000/home
+Completed 302 Found in 49ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/home" for ::1 at 2016-09-17 14:54:32 +0200
+Processing by CommentsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments"
+  Rendered comments/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 24ms (Views: 19.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/leagues/find" for ::1 at 2016-09-17 14:54:35 +0200
+Processing by LeaguesController#find as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 31ms (Views: 28.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/leagues/join?authenticity_token=FszbeUV1MI0zHpMtcBZ15h03XvZIIiHzupL%2BVTAMY3hQueHuW5foBmRH%2BF%2BVLOk1GqGaKfVZCb1DXZhKRSDfSQ%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:54:39 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"FszbeUV1MI0zHpMtcBZ15h03XvZIIiHzupL+VTAMY3hQueHuW5foBmRH+F+VLOk1GqGaKfVZCb1DXZhKRSDfSQ==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.2ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+  Rendered leagues/find.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 17.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/leagues/join?authenticity_token=Grbl9gi0AFNUpdwkNs15Kfr1Prni5YfXVd4PZUI%2BZQ1cw99hFlbY2AP8t1bT9%2BX6%2FWP6Zl%2Ber5msEWl6NxLZPA%3D%3D&league_name=Test_league1&password=[FILTERED]&user_id=1" for ::1 at 2016-09-17 14:54:46 +0200
+Processing by LeaguesController#join as HTML
+  Parameters: {"authenticity_token"=>"Grbl9gi0AFNUpdwkNs15Kfr1Prni5YfXVd4PZUI+ZQ1cw99hFlbY2AP8t1bT9+X6/WP6Zl+er5msEWl6NxLZPA==", "league_name"=>"Test_league1", "password"=>"[FILTERED]", "user_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mLeague Load (0.1ms)[0m  [1mSELECT  "leagues".* FROM "leagues" WHERE "leagues"."league_name" = ? LIMIT 1[0m  [["league_name", "Test_league1"]]
+Redirected to http://localhost:3000/user_leagues/joinleague/15/1
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/user_leagues/joinleague/15/1" for ::1 at 2016-09-17 14:54:46 +0200
+Processing by UserLeaguesController#joinleague as HTML
+  Parameters: {"league_id"=>"15", "user_id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUserLeague Exists (0.2ms)[0m  SELECT  1 AS one FROM "user_leagues" WHERE ("user_leagues"."user_id" = 1 AND "user_leagues"."league_id" = 15) LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+Redirected to http://localhost:3000/home
+Completed 302 Found in 5ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/home" for ::1 at 2016-09-17 14:54:46 +0200
+Processing by CommentsController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments"[0m
+  Rendered comments/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 17.1ms | ActiveRecord: 0.3ms)

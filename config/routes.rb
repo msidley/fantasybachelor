@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-root "home#index"
+root "comments#index"
 
 # Routes for the Action resource:
   # CREATE
@@ -92,6 +92,9 @@ root "home#index"
   get "/leagues/new", :controller => "leagues", :action => "new"
   post "/create_league", :controller => "leagues", :action => "create"
 
+  get "/leagues/find", :controller => "leagues", :action => "find"
+  get "/leagues/join", :controller => "leagues", :action => "join"
+
   # READ
   get "/leagues", :controller => "leagues", :action => "index"
   get "/leagues/:id", :controller => "leagues", :action => "show"
@@ -107,6 +110,11 @@ root "home#index"
   # Routes for the User_league resource:
   # CREATE
   get "/user_leagues/newleague/:league_id/:user_id", :controller => "user_leagues", :action => "newleague"
+
+  get "/user_leagues/joinleague/:league_id/:user_id", :controller => "user_leagues", :action => "joinleague"
+
+  get "/user_leagues/new", :controller => "user_leagues", :action => "new"
+
   post "/create_user_league", :controller => "user_leagues", :action => "create"
 
   # READ
