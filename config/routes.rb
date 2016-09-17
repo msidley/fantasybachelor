@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-root "actions#new"
+root "comments#index"
 
 # Routes for the Action resource:
   # CREATE
@@ -121,7 +121,7 @@ root "actions#new"
   get "/delete_user_league/:id", :controller => "user_leagues", :action => "destroy"
   #------------------------------
 
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'registrations' }
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
